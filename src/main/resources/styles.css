@@ -1,0 +1,130 @@
+.root {
+    -fx-background-color: rgba(30, 30, 30, 0.9);
+    -fx-padding: 20;
+    -fx-spacing: 10;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.message-area {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.5, 0, 0);
+}
+
+.text-area {
+    -fx-background-color: transparent;
+}
+
+.text-field {
+    -fx-text-fill: #333333;
+    -fx-background-color: #ffffff;
+    -fx-prompt-text-fill: #999999;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+    -fx-padding: 10 15;
+    -fx-font-size: 14pt;
+    -fx-background-insets: 0;
+    -fx-pref-width: 100%;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14pt;
+    -fx-padding: 10 20;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.message {
+    -fx-text-fill: #333333;
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 10 15;
+    -fx-border-radius: 15;
+    -fx-font-size: 14pt;
+    -fx-max-width: 70%;
+    -fx-wrap-text: true;
+    -fx-alignment: BASELINE_LEFT;
+}
+
+.message.you {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: BASELINE_RIGHT;
+    -fx-padding: 10 15;
+    -fx-border-radius: 15;
+    -fx-font-size: 14pt;
+    -fx-max-width: 70%;
+    -fx-wrap-text: true;
+}
+
+.message-container {
+    -fx-padding: 5;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.message-container.you {
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.message.private {
+    -fx-background-color: #FFC0CB;
+    -fx-text-fill: #333333;
+    -fx-border-radius: 15;
+    -fx-padding: 10 15;
+    -fx-font-size: 14pt;
+    -fx-wrap-text: true;
+}
+
+.message-container.private {
+    -fx-padding: 5;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.sidebar {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.5, 0, 0);
+}
+
+.user-list {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-padding: 10;
+    -fx-border-radius: 10;
+}
+
+.user-list .list-cell {
+    -fx-padding: 5px;
+}
+
+.user-list .list-cell:filled:selected, .user-list .list-cell:filled:selected:hover {
+    -fx-background-color: #336699;
+    -fx-text-fill: white;
+}
+
+.user-list .list-cell:filled:hover {
+    -fx-background-color: #6699cc;
+    -fx-text-fill: white;
+}
+
+.user-list .list-cell.you {
+    -fx-font-weight: bold;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
